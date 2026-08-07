@@ -1,0 +1,125 @@
+.div-index-context {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.h1-index-title {
+    color: hsl(232, 13%, 33%);
+    font-size: 2.2rem;
+}
+
+.div-plancicle-block {
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.h2-plancycle-style {
+    font-size: 1.25rem;
+    color: hsl(233, 13%, 49%);
+    font-weight: 550;
+}
+
+.div-switch-cycle {
+    position: relative;
+    cursor: pointer;
+}
+
+.div-switch-cycle::before {
+    content: "";
+    border-radius: 1.5rem;
+    height: 3rem;
+    display: flex;
+    width: 5.5rem;
+    transition: filter 0.25s ease;
+    background: linear-gradient(90deg, hsl(237, 73%, 79%), hsl(238, 63%, 64%));
+}
+
+.div-switch-cycle:hover::before {
+    filter: opacity(0.5);
+}
+
+.div-switch-cycle::after {
+    content: "";
+    background-color: white;
+    width: 2.25rem;
+    height: 2.25rem;
+    z-index: 1;
+    top: 50%;
+    left: 0.375rem;
+    transform: translateY(-50%);
+    border-radius: 1.5rem;
+    position: absolute;
+    display: flex;
+    transition: left 0.5s ease;
+}
+
+.div-switch-cycle-active::after {
+    left: 2.875rem;
+}
+
+.h2-pricecard-planname-display {
+    font-size: 1rem;
+}
+
+.img-background-design-style {
+    position: absolute;
+}
+
+.img-topbg-icon {
+    right: 0;
+    top: 0;
+}
+
+.img-bottombg-icon {
+    left: 0;
+    bottom: 0;
+}
+
+.div-secpricecard-context {
+    text-align: center;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 0.2);
+}
+
+.span-price-display-currency-logo {
+    font-size: 2.5rem;
+}
+
+.h2-pricecard-planname-display {
+    color: hsl(233, 13%, 49%);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.h1-secpricecard-price-display {
+    color: hsl(232, 13%, 33%);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 4rem;
+    margin: 1.2rem 0;
+}
+
+.h1-planbenefits-benefit-style {
+    font-size: 1.1rem;
+    color: hsl(233, 13%, 49%);
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+.button-pricecard-learnmore {
+    margin-top: 2rem;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0.9rem;
+    background: linear-gradient(90deg, hsl(237, 73%, 79%), hsl(238, 63%, 64%));
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+}
