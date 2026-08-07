@@ -1,3 +1,7 @@
+:root {
+    --blue-background: linear-gradient(90deg, hsl(237, 73%, 79%), hsl(238, 63%, 64%))
+}
+
 .div-index-context {
     position: relative;
     justify-content: center;
@@ -34,7 +38,7 @@
     display: flex;
     width: 5.5rem;
     transition: filter 0.25s ease;
-    background: linear-gradient(90deg, hsl(237, 73%, 79%), hsl(238, 63%, 64%));
+    background: var(--blue-background)
 }
 
 .div-switch-cycle:hover::before {
@@ -116,10 +120,17 @@
 .button-pricecard-learnmore {
     margin-top: 2rem;
     border-radius: 0.4rem;
-    border: none;
+    border: 0.1mm solid transparent;
     padding: 0.9rem;
-    background: linear-gradient(90deg, hsl(237, 73%, 79%), hsl(238, 63%, 64%));
+    background: var(--blue-background);
     font-weight: bold;
     color: white;
+    transition: background 0.5s ease, border 0.5s ease;
     font-size: 0.8rem;
+}
+
+.button-pricecard-learnmore:hover {
+    background: linear-gradient(90deg, white, white);
+    color: hsl(238, 63%, 64%);
+    border: 0.1mm solid hsl(238, 63%, 64%);
 }
